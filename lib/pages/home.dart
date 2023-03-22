@@ -18,7 +18,7 @@ class _homePageState extends State<homePage> {
       appBar: AppBar(
         title: const Text('Home'),
         actions: [
-          Text('Hi ${FirebaseAuth.instance.currentUser!.displayName}'),
+          // Text('Hi ${FirebaseAuth.instance.currentUser!.displayName}'),
           IconButton(
             onPressed: () async {
                 await FirebaseServices().signOut();
